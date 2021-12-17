@@ -1,0 +1,25 @@
+
+$fontfamily: 'Montserrat', sans-serif;
+$fontsize1: 14px;
+$fontsize2: 16px;
+$fontsize3: 18px;
+$fontsize4: 20px;
+$fontsize5: 23px;
+
+$bgimage: url('../bag.png');
+
+@mixin br($radius, $boxH, $boxW) {
+    border-radius: $radius; 
+    height: $boxH;
+    width: $boxW; 
+} 
+
+@mixin flexcenter($content, $items, $direction) {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: $content;
+    align-items: $items;
+    flex-direction: $direction;    
+}
+
+

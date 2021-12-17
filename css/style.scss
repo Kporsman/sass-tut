@@ -1,0 +1,155 @@
+
+@import'_variables';
+@import'_header';
+@import'_footer';
+@import'_generelinfo';
+@import'_colors';
+@import'_mobile';
+@import'_profil';
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: $bgimage;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+ .container_1 {
+    @include flexcenter(flex-start, center, row);
+    height: 400px;
+    width: fit-content;
+    margin: 50px;
+    
+    .content {
+        display: flex;
+        justify-content:center;
+        height: 400px;
+        width: auto;
+        margin-top: 100px;
+        padding: 20px;
+
+        .h1 {
+            font-weight: initial;
+            size: $fontsize5;
+            letter-spacing: 1.2px;
+            line-height: 16px;
+            color: $blueish;
+            text-align: left;  
+           
+        }
+            
+    }
+    .box02 {
+        @include flexcenter(center, center, center);
+        height: 400px;
+        width: auto;
+        margin:5px;
+
+    }
+
+}
+    
+    .container {   
+     @include flexcenter(space-between, center, column);
+     margin: 30px;
+
+      .box_1 {
+             @include flexcenter(left, space-between, center);
+             @include br(0 35px 0 35px, 300px, 800px);
+             background-color: #f6ce1f;  
+             margin-bottom: 15px;
+             img {
+                @include br(0 0 0 35px, 300px, auto);
+                
+               } 
+             h6 {
+                font-size: $fontsize4;
+                letter-spacing: 1.2;
+                color: $blueish;
+                text-align: left; 
+              }
+             
+            }  
+      
+       .box_2 {
+             @include flexcenter(left, space-between, center);
+             @include br(0 35px 0 35px, 300px, 800px);
+             background-color: #2e2425;
+             margin:15px 0 15px 0;
+             img {
+                @include br(0 0 0 35px, 300px, auto);
+             }  
+             h6 {
+              font-size: $fontsize4;
+              letter-spacing: 1.2;
+              color: $lightey;
+              text-align: left; 
+            }
+  
+            }
+
+       .box_3 {
+              @include flexcenter(left, space-between, center);
+              @include br(0 35px 0 35px, 300px, 800px);
+              background-color: #8c7c5a;
+              margin:15px 0 15px 0;
+              img {
+              @include br(0 0 0 35px, 300px, auto);
+              } 
+              h6 {
+                font-size: $fontsize4;
+                letter-spacing: 1.2;
+                color: $lightey;
+                text-align: left; 
+              } 
+
+              
+            }
+    
+       .box_4 {
+              @include flexcenter(left, space-between, center);
+              @include br(0 35px 0 35px, 300px, 800px);
+              background-color: #7a886f;
+              margin:15px 0 15px 0;
+              img {
+                  @include br(0 0 0 35px, 300px, auto);
+                 }
+              h6 {
+                  font-size: $fontsize4;
+                  letter-spacing: 1.2;
+                  color: $blueish;
+                  text-align: left; 
+              } 
+              
+            }
+    }
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+

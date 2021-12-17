@@ -1,0 +1,137 @@
+@import'_variables';
+@import'_header';
+@import'_footer';
+@import'_generelinfo';
+@import'_colors';
+@import'_mobile';
+
+
+$bgimage: url('../bag.png');
+
+
+body {
+    font-family: $fontfamily;
+    background-image: $bgimage;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container_pr1 {
+    @include flexcenter(center, center, row);
+    height: 400px;
+    width: fit-content;
+    margin: 50px;
+    
+    .content_1 {
+        display: flex;
+        justify-content:center;
+        height: auto;
+        width: auto;
+        padding: 20px;
+        .h8 {
+            size: $fontsize3;
+            line-height: 12px;
+            color: $blueish;
+            text-align: left;  
+           
+        }
+
+        
+            
+    }
+    .box_pr1 {
+        @include flexcenter(center, center, center);
+        height: 400px;
+        width: auto;
+        margin:5px;
+        .h8 {
+            size: $fontsize3;
+            line-height: 12px;
+            color: $blueish;
+            text-align: left; 
+        }
+
+    }
+
+}
+    
+    .container_pr2 {   
+     @include flexcenter(space-between, center, column);
+     margin: 30px;
+
+      .box_1 {
+             @include flexcenter(left, space-between, center);
+             @include br(0 35px 0 35px, 300px, 800px);
+             background-color: #f6ce1f;  
+             margin-bottom: 15px;
+             img {
+                @include br(0 0 0 35px, 300px, auto);
+                
+               } 
+             h6 {
+                font-size: $fontsize5;
+                letter-spacing: 1.2px;
+                line-height: 16px;
+                color: $blueish;
+                text-align: right; 
+              }
+             
+             
+              
+            }  
+      
+       .box_2 {
+             @include flexcenter(left, space-between, center);
+             @include br(0 35px 0 35px, 300px, 800px);
+             background-color: #2e2425;
+             margin:15px 0 15px 0;
+             img {
+                @include br(0 0 0 35px, 300px, auto);
+             }  
+             h6 {
+              font-size: $fontsize5;
+              letter-spacing: 1.2px;
+              line-height: 16px;
+              color: $blueish;
+              text-align: right; 
+            }
+  
+            }
+
+       .box_3 {
+              @include flexcenter(left, space-between, center);
+              @include br(0 35px 0 35px, 300px, 800px);
+              background-color: #8c7c5a;
+              margin:15px 0 15px 0;
+              img {
+              @include br(0 0 0 35px, 300px, auto);
+              } 
+              h6 {
+                font-size: $fontsize5;
+                letter-spacing: 1.2px;
+                line-height: 16px;
+                color: $blueish;
+                text-align: right; 
+              } 
+
+              
+            }
+    
+       .box_4 {
+              @include flexcenter(left, space-between, center);
+              @include br(0 35px 0 35px, 300px, 800px);
+              background-color: #7a886f;
+              margin:15px 0 15px 0;
+              img {
+                  @include br(0 0 0 35px, 300px, auto);
+                 }
+              h6 {
+                  font-size: $fontsize5;
+                  letter-spacing: 1.2px;
+                  line-height: 16px;
+                  color: $blueish;
+                  text-align: right; 
+              } 
+              
+            }
+    }

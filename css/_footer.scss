@@ -1,0 +1,39 @@
+@import'_variables';
+@import'_colors';
+
+
+.footer {
+    @include flexcenter(center, center, row);
+    background-color: #fff7f5;
+    width: auto;
+    height: 350px;
+
+    h1 {
+        font-size: $fontsize4;
+    } 
+
+    p {
+        font-size: $fontsize2;
+        
+    }
+
+       .box_f1 {
+        height: 200px;
+        width: 300px;
+        padding: 30px;
+
+        }
+    
+        .box_f2 {
+        height: 200px;
+        width: 300px; 
+        padding: 30px;
+        }
+    
+        .box_f3 {
+        height: 200px;
+        width: 300px; 
+        padding: 30px;
+         }
+
+}

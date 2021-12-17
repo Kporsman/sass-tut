@@ -1,0 +1,76 @@
+@import'_variables';
+@import'_header';
+@import'_footer';
+@import'_colors';
+@import'_mobile';
+
+$bgimage: url('../bag.png');
+
+
+body {
+    font-family: $fontfamily;
+    background-image: $bgimage;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.flex-container-g {
+    @include flexcenter(center, center, row);
+
+     .box_gen_1 {
+            @include flexcenter(center, center, column);
+            @include br(0 0 0 0, 300px, 200px);
+             
+            .box_igen_1 {
+                @include flexcenter(center, center, center);
+                .btn_1 {
+                    height: 100px;
+                    width: auto;
+                    background-color: $primary5;
+                    border: none;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: $fontsize1;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                  }
+                  
+
+            }
+            .box_igen_2 {
+                @include flexcenter(center, center, center);
+
+            }
+            .box_igen_3 {
+                @include flexcenter(left, center, center);
+
+            }
+            
+            
+             
+           }  
+     
+     .box_gen_2 {
+            @include flexcenter(center, center, center);
+            @include br(0, 300px, 400px);
+            background-color: #2e2425;
+            margin:15px 0 15px 0;
+            }
+
+     .box_gen_3 {
+                @include flexcenter(center, center, center);
+                @include br(0, 300px, 400px);
+                background-color: #2e2425;
+                margin:15px 0 15px 0;
+                
+     
+               }
+
+             
+          
+             
+           
+}
